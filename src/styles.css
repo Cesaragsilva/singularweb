@@ -7,3 +7,9 @@
     line-height: 29px;
     color: #626262;
 }
+.content{
+    padding-left: 20%;
+    padding-top: 2%;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,16 @@
+<div id="menu" class="menu">
+    <div id="logo" class="logo"></div>
+    <div id="container" class="container">
+        <mat-list>
+            <mat-list-item *ngFor="let menu of menus" (click)="handleClick(menu.router)">
+                <ng-container *ngIf="currentRouter == menu.router">
+                    <mat-icon svgIcon="{{menu.icon}}"></mat-icon>
+               </ng-container>
+               <ng-container *ngIf="currentRouter != menu.router">
+                <mat-icon svgIcon="{{menu.icon+'-off'}}"></mat-icon>
+              </ng-container>
+                <span [class]="currentRouter == menu.router ? 'itemMenu active' : 'itemMenu'">{{menu.name}}</span>
+            </mat-list-item>
+          </mat-list>
+    </div>
+</div>
