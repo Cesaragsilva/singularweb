@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/singularweb",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
